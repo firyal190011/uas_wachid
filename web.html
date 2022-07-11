@@ -1,0 +1,1137 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>UAS PPW &#8212; My sample book</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="UAS PPW" href="intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">My sample book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    UAS PPW
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   UAS PPW
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/web.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fweb.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/web.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#crawling">
+   Crawling
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#import-yang-di-perlukan">
+   Import yang di perlukan
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cleaning">
+   Cleaning
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lsa">
+   LSA
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>UAS PPW</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#crawling">
+   Crawling
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#import-yang-di-perlukan">
+   Import yang di perlukan
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cleaning">
+   Cleaning
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#lsa">
+   LSA
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="uas-ppw">
+<h1>UAS PPW<a class="headerlink" href="#uas-ppw" title="Permalink to this headline">#</a></h1>
+<section id="crawling">
+<h2>Crawling<a class="headerlink" href="#crawling" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">scrapy</span>
+
+
+<span class="k">class</span> <span class="nc">QuotesSpider</span><span class="p">(</span><span class="n">scrapy</span><span class="o">.</span><span class="n">Spider</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;quotes&quot;</span>
+
+    <span class="k">def</span> <span class="nf">start_requests</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">urls</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="s2">&quot;https://pta.trunojoyo.ac.id/welcome/detail/080211100070&quot;</span><span class="p">,</span>
+ 
+        <span class="p">]</span>
+        <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">urls</span><span class="p">:</span>
+            <span class="k">yield</span> <span class="n">scrapy</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">parse</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+        <span class="k">yield</span><span class="p">{</span>
+        <span class="s1">&#39;Abstrak&#39;</span> <span class="p">:</span> <span class="n">response</span><span class="o">.</span><span class="n">css</span><span class="p">(</span><span class="s1">&#39;#content_journal &gt; ul &gt; li &gt; div:nth-child(4) &gt; div:nth-child(2) &gt;  ::text&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">extract</span><span class="p">(),</span>
+
+
+        <span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="import-yang-di-perlukan">
+<h2>Import yang di perlukan<a class="headerlink" href="#import-yang-di-perlukan" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># data visualisation and manipulation</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">style</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="c1">#configure</span>
+<span class="c1"># sets matplotlib to inline and displays graphs below the corressponding cell.</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline  
+<span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;fivethirtyeight&#39;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s1">&#39;whitegrid&#39;</span><span class="p">,</span><span class="n">color_codes</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1">#import nltk</span>
+<span class="kn">import</span> <span class="nn">nltk</span>
+<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
+<span class="kn">from</span> <span class="nn">nltk.tokenize</span> <span class="kn">import</span> <span class="n">word_tokenize</span><span class="p">,</span><span class="n">sent_tokenize</span>
+
+<span class="c1">#preprocessing</span>
+<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>  <span class="c1">#stopwords</span>
+<span class="kn">from</span> <span class="nn">nltk</span> <span class="kn">import</span> <span class="n">word_tokenize</span><span class="p">,</span><span class="n">sent_tokenize</span> <span class="c1"># tokenizing</span>
+<span class="kn">from</span> <span class="nn">nltk.stem</span> <span class="kn">import</span> <span class="n">PorterStemmer</span><span class="p">,</span><span class="n">LancasterStemmer</span>  <span class="c1"># using the Porter Stemmer and Lancaster Stemmer and others</span>
+<span class="kn">from</span> <span class="nn">nltk.stem.snowball</span> <span class="kn">import</span> <span class="n">SnowballStemmer</span>
+<span class="kn">from</span> <span class="nn">nltk.stem</span> <span class="kn">import</span> <span class="n">WordNetLemmatizer</span>  <span class="c1"># lammatizer from WordNet</span>
+
+<span class="c1"># for named entity recognition (NER)</span>
+<span class="kn">from</span> <span class="nn">nltk</span> <span class="kn">import</span> <span class="n">ne_chunk</span>
+
+<span class="c1"># vectorizers for creating the document-term-matrix (DTM)</span>
+<span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span><span class="p">,</span><span class="n">CountVectorizer</span>
+
+<span class="c1">#stop-words</span>
+<span class="n">stop_words</span><span class="o">=</span><span class="nb">set</span><span class="p">(</span><span class="n">nltk</span><span class="o">.</span><span class="n">corpus</span><span class="o">.</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;english&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="nn">Input In [2],</span> in <span class="ni">&lt;cell line: 3&gt;</span><span class="nt">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># data visualisation and manipulation</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">style</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;jurnal.csv&#39;</span><span class="p">,</span> <span class="n">usecols</span> <span class="o">=</span><span class="p">[</span><span class="s1">&#39;Abstrak_indo&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Abstrak_indo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Toko Batik Tulis Madura merupakan salah satu t...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>PT. Pos Indonesia (Persero) merupakan salah sa...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Kabupaten Pamekasan merupakan salah satu pusat...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Pemilihan  supplier merupakan salah satu isu p...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>ABSTRAK\r\nData yang terdapat pada SMA Wachid ...</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Sumber daya manusia mutlak dibutuhkan untuk ke...</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Deteksi manusia merupakan  suatu aplikasi yang...</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Aplikasi klasifikasi status gizi balita ini di...</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Setiap perusahaan mengharapkan adanya hubungan...</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Sebuah citra banyak diterapkan dalam berbagai ...</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="cleaning">
+<h2>Cleaning<a class="headerlink" href="#cleaning" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">clean_text</span><span class="p">(</span><span class="n">headline</span><span class="p">):</span>
+  <span class="n">le</span><span class="o">=</span><span class="n">WordNetLemmatizer</span><span class="p">()</span>
+  <span class="n">word_tokens</span><span class="o">=</span><span class="n">word_tokenize</span><span class="p">(</span><span class="n">headline</span><span class="p">)</span>
+  <span class="n">tokens</span><span class="o">=</span><span class="p">[</span><span class="n">le</span><span class="o">.</span><span class="n">lemmatize</span><span class="p">(</span><span class="n">w</span><span class="p">)</span> <span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">word_tokens</span> <span class="k">if</span> <span class="n">w</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">stop_words</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">w</span><span class="p">)</span><span class="o">&gt;</span><span class="mi">3</span><span class="p">]</span>
+  <span class="n">cleaned_text</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">tokens</span><span class="p">)</span>
+  <span class="k">return</span> <span class="n">cleaned_text</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># time taking</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Abstrak_indo_cleaned&#39;</span><span class="p">]</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Abstrak_indo&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">clean_text</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Abstrak_indo</th>
+      <th>Abstrak_indo_cleaned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Toko Batik Tulis Madura merupakan salah satu t...</td>
+      <td>Toko Batik Tulis Madura merupakan salah satu t...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>PT. Pos Indonesia (Persero) merupakan salah sa...</td>
+      <td>Indonesia Persero merupakan salah satu perusah...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Kabupaten Pamekasan merupakan salah satu pusat...</td>
+      <td>Kabupaten Pamekasan merupakan salah satu pusat...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Pemilihan  supplier merupakan salah satu isu p...</td>
+      <td>Pemilihan supplier merupakan salah satu pentin...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>ABSTRAK\r\nData yang terdapat pada SMA Wachid ...</td>
+      <td>ABSTRAK Data yang terdapat pada Wachid Hasyim ...</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Abstrak_indo&#39;</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Abstrak_indo_cleaned</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Toko Batik Tulis Madura merupakan salah satu t...</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Indonesia Persero merupakan salah satu perusah...</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Kabupaten Pamekasan merupakan salah satu pusat...</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Pemilihan supplier merupakan salah satu pentin...</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>ABSTRAK Data yang terdapat pada Wachid Hasyim ...</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Abstrak_indo_cleaned&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;Toko Batik Tulis Madura merupakan salah satu toko yang telah beroperasi sejak tahun 2011 dengan menggunakan website e-commerce Walau telah menggunakan model e-commerce website tersebut memiliki kekurangan yaitu belum fitur rekomndasi untuk memudahkan konsumen mencari barang yang ingin dibelinya Penelitian bertujuan membuat rekomendasi dengan decision untuk membantu pelanggan dalam memilih produk website Toko Batik Tulis Madura Teknik pengumpulan analis data terdiri dari Studi Literatur yang berhubungan dengan decision multi criterion Observasi dilakukan terhadap website Toko Batik Tulis Madura Interview dilakukan kepada pemilik website Toko Batik Tulis Madura Pembuatan implementasi pada Penelitian menggunakan model waterfall Jenis decision yang akan diimplementasikan adalah Multi Criteria Filtering Metode pembobotan yang digunakan pada Multi Criteria Filtering yaitu Decision Matrix Hasil ujicoba dengan jumlah sample percobaan sebanyak kali data perconbaan pencarian presentase akurasi adalah error adalah Hasil kelayakan dari beberapa kuisoner dihasilkan bahwa performa yang dimiliki tool cukup baik tool layak untuk diintegrasikan serta digunakan dalam website e-commerce Kata Kunci Decision Multi Criteria Filtering&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vect</span> <span class="o">=</span><span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">stop_words</span><span class="o">=</span><span class="n">stop_words</span><span class="p">,</span><span class="n">max_features</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span> 
+<span class="c1"># to play with. min_df,max_df,max_features etc...</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vect_text</span><span class="o">=</span><span class="n">vect</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Abstrak_indo_cleaned&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">vect_text</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vect_text</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(60, 1000)
+  (0, 965)	0.345916940950532
+  (0, 74)	0.22892583178997186
+  (0, 974)	0.25689155580262774
+  (0, 455)	0.21829375696477538
+  (0, 566)	0.027321748445371784
+  (0, 793)	0.02947993532903489
+  (0, 798)	0.03006449946217725
+  (0, 998)	0.10345794294041542
+  (0, 916)	0.07126015599083284
+  (0, 815)	0.0691833881901064
+  (0, 902)	0.0522709587080435
+  (0, 1)	0.06037522681742574
+  (0, 172)	0.0712712402708651
+  (0, 545)	0.06746551297761273
+  (0, 995)	0.41510032914063844
+  (0, 151)	0.20755016457031922
+  (0, 577)	0.11446291589498593
+  (0, 940)	0.027321748445371784
+  (0, 507)	0.030669578755966955
+  (0, 997)	0.06389484363010381
+  (0, 81)	0.0522709587080435
+  (0, 279)	0.0484232965748123
+  (0, 982)	0.05345343020314881
+  (0, 516)	0.054573439241193844
+  (0, 410)	0.06422288895065693
+  :	:
+  (59, 299)	0.5335072980252071
+  (59, 530)	0.038242168129767516
+  (59, 850)	0.03625013266330325
+  (59, 9)	0.03625013266330325
+  (59, 719)	0.06385719606030678
+  (59, 65)	0.03366356073892819
+  (59, 971)	0.05927858866946746
+  (59, 699)	0.05572714486708515
+  (59, 550)	0.05927858866946746
+  (59, 471)	0.08635688504183862
+  (59, 213)	0.04469535280300667
+  (59, 847)	0.050372017047417686
+  (59, 253)	0.05282540399622831
+  (59, 86)	0.05572714486708515
+  (59, 514)	0.05282540399622831
+  (59, 390)	0.05572714486708515
+  (59, 633)	0.2963929433473373
+  (59, 792)	0.05282540399622831
+  (59, 667)	0.21130161598491323
+  (59, 340)	0.050372017047417686
+  (59, 789)	0.05572714486708515
+  (59, 458)	0.06385719606030678
+  (59, 226)	0.14062076146709188
+  (59, 589)	0.2109311422006378
+  (59, 927)	0.14062076146709188
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">idf</span><span class="o">=</span><span class="n">vect</span><span class="o">.</span><span class="n">idf_</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dd</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">vect</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">(),</span> <span class="n">idf</span><span class="p">))</span>
+<span class="n">l</span><span class="o">=</span><span class="nb">sorted</span><span class="p">(</span><span class="n">dd</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="p">(</span><span class="n">dd</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">)</span>
+<span class="c1"># print(l)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">l</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">l</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dd</span><span class="p">[</span><span class="s1">&#39;yang&#39;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dd</span><span class="p">[</span><span class="s1">&#39;wajah&#39;</span><span class="p">])</span>  <span class="c1"># police is most common and forecast is least common among the news headlines.</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>yang wajah
+1.0
+4.417726683613366
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="lsa">
+<h2>LSA<a class="headerlink" href="#lsa" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">TruncatedSVD</span>
+<span class="n">lsa_model</span> <span class="o">=</span> <span class="n">TruncatedSVD</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">algorithm</span><span class="o">=</span><span class="s1">&#39;randomized&#39;</span><span class="p">,</span> <span class="n">n_iter</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="n">lsa_top</span><span class="o">=</span><span class="n">lsa_model</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">vect_text</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">lsa_top</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lsa_top</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>  <span class="c1"># (no_of_doc*no_of_topics)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 2.94621783e-01  1.14284142e-02 -7.93177351e-02  1.43787806e-01
+  -1.69167977e-01 -1.33479482e-01  7.54971602e-04 -8.47349114e-02
+   5.56171720e-01  3.00287419e-01]
+ [ 3.12924002e-01 -1.13953528e-01 -1.16543532e-01 -7.31609178e-02
+  -5.87801002e-02 -1.37875420e-01 -1.60644013e-01  8.15194883e-02
+   2.82950028e-02  1.44308558e-01]
+ [ 3.15876446e-01  3.92275463e-02 -7.29732514e-02  2.12513524e-01
+  -1.91671745e-01 -1.75683185e-01  2.46247292e-02 -6.66666155e-02
+   5.10893907e-01  3.61791671e-01]
+ [ 2.36507649e-01 -9.40772468e-02 -1.60423693e-01 -2.25230320e-02
+  -7.09792431e-02 -6.12045093e-02  1.71505553e-01 -8.79197555e-02
+   1.09858280e-01 -9.60265005e-02]
+ [ 3.08898547e-01 -1.18551942e-02 -2.50981218e-02 -6.10313660e-02
+   7.77796435e-02  7.27812159e-02 -1.91285545e-01  9.48380084e-02
+   1.04618613e-01  6.25058256e-02]
+ [ 3.28663305e-01 -1.82776721e-01 -3.17252494e-01 -1.33209602e-01
+  -9.90653639e-02 -1.62090349e-01  3.36326668e-01 -1.61637384e-01
+  -1.31629912e-01 -1.64335883e-01]
+ [ 4.27946262e-01  2.94704485e-01  4.76146449e-02  5.75123807e-02
+  -7.23999708e-02  1.14502435e-01 -3.12596920e-02  3.36423399e-02
+  -1.62491374e-01 -9.26847859e-03]
+ [ 2.06619830e-01 -5.24109120e-02 -5.88223646e-02 -7.10187268e-03
+   5.71847397e-02  5.17456901e-01 -9.63139363e-02 -1.74683061e-01
+  -1.42302449e-01  2.81655768e-01]
+ [ 3.08734951e-01 -1.15983542e-01 -2.35216315e-01 -5.05485072e-02
+  -1.32531048e-01 -3.00206147e-01  5.69504751e-02 -4.29787434e-02
+  -1.88467495e-01  1.74017496e-02]
+ [ 3.62529482e-01  3.17590689e-01  3.17237202e-02  1.64151162e-01
+  -2.10384423e-01  5.24427569e-02 -3.28020126e-02  2.51434967e-02
+  -2.77162466e-01 -1.06143897e-01]
+ [ 2.74195225e-01 -1.89552214e-01  2.86643072e-01  2.11523319e-02
+  -1.65370491e-02  8.22133216e-03  7.09409754e-02  4.75416388e-02
+  -2.62065919e-02 -4.37803629e-03]
+ [ 1.91105901e-01 -1.62325866e-01  4.13012067e-01 -6.46133189e-02
+  -1.25745757e-01 -9.25824009e-02 -6.07335081e-02 -3.24186860e-01
+   1.51866531e-02  3.30553323e-02]
+ [ 2.09767906e-01 -1.76406690e-01  4.47329622e-01 -8.31612423e-02
+  -1.23838929e-01 -6.62368400e-02 -1.13424101e-01 -1.54445671e-01
+   4.54334654e-02 -1.28908656e-01]
+ [ 2.12227628e-01 -1.38439203e-01  2.77658498e-01 -9.28074801e-02
+  -7.91135886e-02 -6.52444166e-02 -2.02008346e-02 -2.39734848e-01
+  -6.35375881e-02  1.08807097e-02]
+ [ 3.16021362e-01 -8.31995711e-02 -2.46444803e-02  6.42020006e-02
+   7.86586170e-02  8.87098797e-02 -7.63012868e-02  5.47050781e-02
+  -6.24771337e-05 -1.23171345e-01]
+ [ 3.04239050e-01 -1.07945818e-02  1.38282194e-02 -5.49903161e-02
+  -4.50085975e-03  1.68598553e-02 -1.06371158e-02  9.10409227e-02
+  -5.35574620e-03 -7.78167312e-02]
+ [ 1.69149113e-01 -9.67361099e-02  2.90908488e-02 -3.15436817e-02
+   6.79844247e-03 -2.51542083e-02 -1.30106075e-01  8.18939486e-02
+  -8.94399874e-02 -1.77649655e-03]
+ [ 3.22902618e-01  2.10449474e-01 -2.31153938e-03  6.18048882e-02
+  -1.11612762e-01  3.85755064e-02 -3.89575114e-02  1.94313671e-02
+  -1.03548067e-01 -1.66170036e-01]
+ [ 2.12727258e-01 -7.58232864e-02  5.37444527e-02  4.84466563e-03
+   1.02877897e-02  6.73153392e-02 -4.99368344e-02  2.32642362e-01
+   3.88717793e-02 -2.21160017e-01]
+ [ 3.42661413e-01 -1.44100625e-01  4.11335684e-02 -6.29213664e-02
+  -5.85047411e-02  9.24512976e-02 -1.38890774e-01  2.68355501e-01
+   1.95725908e-01 -2.58100125e-01]
+ [ 2.35753805e-01 -1.17652694e-01  1.87464353e-01  4.00532420e-02
+  -1.17182859e-02  1.89878029e-02  3.73353156e-01  3.55334569e-01
+  -1.08959290e-01  2.52556250e-01]
+ [ 3.05561260e-01  1.66945623e-01  3.48331279e-02 -1.25915341e-01
+   1.44002399e-01  1.76407886e-02 -2.61474418e-02  1.24613094e-02
+  -1.59548285e-02 -2.63429860e-02]
+ [ 3.87959441e-01 -8.66903428e-02  6.39789907e-02  9.21737593e-02
+   8.19849910e-02  5.29339108e-02 -5.37744514e-02  9.40761976e-02
+   8.61201540e-02 -3.55841638e-02]
+ [ 3.31357511e-01 -1.49976051e-01 -2.04910791e-01 -1.47425906e-01
+  -2.70989910e-02 -1.38222243e-01 -2.15015436e-01  1.93099669e-02
+  -1.73971977e-01  1.83562214e-01]
+ [ 3.24399774e-01 -1.20393825e-01 -1.71787497e-01 -1.85304135e-01
+  -2.71379939e-02 -1.99183945e-01 -2.71655405e-01  1.05045274e-01
+  -1.63410051e-01  2.18997468e-01]
+ [ 2.31289034e-01 -7.25425220e-02 -4.82006864e-02  9.35634481e-02
+   8.25867479e-02  5.44332139e-02 -1.45098869e-02 -3.91395323e-02
+   5.16122112e-02 -9.53752602e-02]
+ [ 3.39407041e-01 -1.24407375e-01 -4.51961762e-02  3.88778475e-03
+   8.44040867e-02  1.87829590e-01 -3.12272417e-02  1.90374636e-02
+   6.21938870e-02 -2.32061879e-02]
+ [ 3.06626790e-01 -1.38557386e-01 -9.32135687e-02 -9.60307008e-02
+   3.94019734e-02 -8.49332502e-03 -2.73249751e-01  6.08465346e-02
+  -4.30785487e-02  1.59177116e-01]
+ [ 2.78001567e-01 -2.22017818e-01  4.95930659e-01 -7.92760695e-02
+  -1.25862677e-01 -9.36255937e-02  2.10357614e-02 -2.81173246e-01
+  -7.38827731e-02  1.46407117e-02]
+ [ 2.49036363e-01  2.36911152e-01  3.63225635e-02 -4.82275267e-02
+   9.56369235e-02  2.69481534e-02  5.46170893e-02  4.68100139e-03
+  -1.47698800e-01 -5.03690028e-02]
+ [ 4.77265191e-01  4.46569307e-01  4.42621410e-03  2.92425090e-01
+  -2.50842834e-01 -5.14436884e-02 -4.68434251e-03 -7.48690379e-02
+   7.57120932e-02  1.18011493e-01]
+ [ 3.87227047e-01 -2.10885587e-01 -2.00740195e-01  1.06113856e-02
+  -5.42217705e-02  2.64458803e-02  2.54569743e-01 -1.88595012e-01
+   1.16784793e-01 -8.17217591e-02]
+ [ 3.22522985e-01 -1.89584302e-01 -2.45085333e-01 -1.05041676e-01
+  -1.24392817e-01 -3.02432363e-01 -1.22974335e-01  3.41789658e-02
+  -2.70553424e-01  1.66302531e-01]
+ [ 3.69560463e-01  3.06001363e-01  5.39063730e-02 -7.94663913e-02
+   8.38055459e-02  5.80082110e-03 -4.26586818e-02  2.65794060e-03
+   8.33403802e-02 -1.12265129e-02]
+ [ 4.16253571e-01  3.99608365e-01  8.45872608e-02 -3.53065309e-01
+   4.17398617e-01 -1.16844109e-01  8.36731230e-02 -6.65411528e-02
+   8.48995266e-02  2.18778260e-02]
+ [ 3.58975298e-01 -1.63787652e-02  1.90722824e-02 -8.42578197e-02
+   3.31216942e-02  8.03172587e-02 -6.74173095e-02  9.92403382e-02
+   3.85270502e-02 -1.15766950e-01]
+ [ 2.94054348e-01 -1.47427891e-01  1.12533799e-01  8.19100559e-02
+   9.04816388e-02  2.25623752e-02  4.91313964e-02  1.25051697e-01
+  -3.14337451e-02 -4.21953517e-02]
+ [ 2.85413016e-01 -8.83665835e-02 -8.64933266e-02 -9.33302796e-02
+   4.20191527e-02  6.20446246e-02 -2.07168476e-01  7.76493766e-02
+   6.70873112e-02  8.89454709e-02]
+ [ 1.95464581e-01 -7.28084880e-02 -2.45257844e-02  1.80708281e-01
+   1.41741488e-01  1.15425379e-02 -2.37326580e-02 -5.83350296e-02
+  -1.99476072e-03 -4.52078784e-02]
+ [ 5.23078148e-01  5.27345483e-01  1.11532744e-02  2.84352222e-01
+  -2.64645719e-01 -1.48384694e-02 -2.70164926e-02 -5.03680911e-02
+  -1.18129549e-02  4.87513635e-02]
+ [ 2.64143993e-01 -2.02524180e-01  1.77401244e-02  6.00092243e-01
+   5.17005135e-01 -1.89162543e-01 -5.13595602e-02 -9.13706854e-02
+  -6.52679393e-02 -2.81275503e-02]
+ [ 3.68081643e-01 -1.49244395e-01 -3.00616064e-01 -8.43638482e-02
+  -8.45001323e-02 -1.05800652e-01  3.54837384e-01 -1.48137599e-01
+  -2.66088939e-02 -2.45592458e-01]
+ [ 2.29157054e-01 -1.62372235e-01 -1.17410221e-01 -4.70542706e-03
+   5.44871120e-02  4.04121807e-01  8.49536157e-02 -1.93539260e-01
+  -1.39568395e-02  1.14613959e-01]
+ [ 2.32441390e-01 -1.22078192e-01  2.63938588e-01  4.23154973e-02
+  -1.97394029e-02  1.36228268e-02  4.87419986e-01  4.47948007e-01
+  -1.16807873e-01  3.10895262e-01]
+ [ 2.84569984e-01 -7.72602273e-02 -7.06765393e-02 -6.72696196e-03
+   3.77920093e-02  1.01898384e-01  5.58460858e-02 -1.94573671e-02
+   1.09199747e-01 -2.92258428e-02]
+ [ 2.84908353e-01 -1.19233316e-01 -5.10572512e-02 -3.52227063e-02
+   5.36039382e-02 -5.05773990e-02 -5.45925408e-02  1.21324547e-01
+  -5.14966662e-02 -1.30409615e-01]
+ [ 4.27492831e-01  3.96329391e-01  3.15498946e-02  1.88772170e-01
+  -2.50688392e-01  5.06168314e-02  1.24871340e-02 -1.76863123e-02
+  -2.39177123e-01 -1.51638909e-01]
+ [ 2.91330573e-01  3.11270757e-02  2.52859920e-03 -5.20057157e-02
+  -5.16910349e-04  8.57085756e-02 -7.59393092e-04  5.55740171e-02
+  -1.33050710e-01 -1.07555601e-01]
+ [ 2.96561418e-01 -1.27034166e-01 -1.59910727e-01 -4.47533612e-02
+  -1.82937092e-02  9.84905407e-02  1.96181516e-01 -8.39100710e-02
+   1.62707134e-01 -2.01746556e-01]
+ [ 2.82542936e-01 -2.21561065e-01  4.99171636e-01 -1.06810558e-01
+  -1.28727619e-01 -1.05370976e-01 -8.48078041e-02 -2.66133199e-01
+  -4.49391570e-02 -3.01895309e-02]
+ [ 2.98743463e-01 -9.95815664e-02 -1.76403576e-01 -4.97346578e-02
+  -3.05501442e-02 -2.00507927e-01  3.71121033e-02 -2.01861521e-02
+  -1.53397085e-01 -7.53796614e-03]
+ [ 2.53060974e-01 -7.27431392e-02 -9.03814422e-02 -8.51409129e-02
+   3.26908061e-02 -1.03369785e-01 -2.56108596e-01  7.52080475e-02
+  -3.04855231e-02  1.35000731e-01]
+ [ 3.01178252e-01 -6.81018539e-02  7.56774406e-02 -9.67337150e-03
+  -5.42541949e-02  8.47597296e-02 -1.57291643e-01  2.54835256e-01
+   1.23751001e-01 -1.84680506e-01]
+ [ 2.33886118e-01 -1.40800860e-01  2.27033463e-01  2.54544873e-02
+  -4.48763104e-02  4.56977652e-02  2.90069905e-01  3.36463209e-01
+  -3.61095618e-02  1.98010624e-01]
+ [ 3.10694930e-01 -1.38847530e-01  4.37071887e-02 -6.90970700e-02
+  -8.06961245e-02  1.30839864e-01 -1.91161306e-01  2.51612524e-01
+   2.99845918e-01 -2.81382092e-01]
+ [ 3.69727622e-01  4.01019871e-01  8.09890299e-02 -3.91607673e-01
+   4.68897350e-01 -1.17085069e-01  1.29905760e-01 -9.10446230e-02
+   1.17166844e-01  5.82217126e-02]
+ [ 3.35870701e-01 -1.36571582e-01 -1.55102160e-01 -1.82984299e-02
+  -2.86832870e-02  1.72877319e-01  1.84895625e-01 -1.54482987e-01
+   1.54645637e-01 -7.39264869e-02]
+ [ 2.03018261e-01  2.26867552e-01  7.88259825e-02 -2.97149978e-01
+   3.72656205e-01 -9.05942451e-02  1.16811192e-01 -3.69112503e-02
+   7.09233394e-02  6.70140046e-02]
+ [ 2.44245394e-01 -1.79759191e-01  3.37879119e-02  6.08978977e-01
+   5.30198941e-01 -1.66714422e-01 -5.29488360e-02 -8.47273749e-02
+  -1.00664340e-01 -3.95458842e-02]
+ [ 2.89591852e-01 -1.29533018e-01 -1.13819561e-01 -3.66421539e-02
+   5.90078468e-02  6.18471878e-01 -3.14672875e-02 -2.44915387e-01
+  -1.64380730e-01  2.83849336e-01]]
+(60, 10)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># most important words for each topic</span>
+<span class="n">vocab</span> <span class="o">=</span> <span class="n">vect</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">()</span>
+
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">comp</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">lsa_model</span><span class="o">.</span><span class="n">components_</span><span class="p">):</span>
+    <span class="n">vocab_comp</span> <span class="o">=</span> <span class="nb">zip</span><span class="p">(</span><span class="n">vocab</span><span class="p">,</span> <span class="n">comp</span><span class="p">)</span>
+    <span class="n">sorted_words</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">vocab_comp</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)[:</span><span class="mi">10</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Topic &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;: &quot;</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">sorted_words</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Topic 0: 
+yang citra dengan pada untuk dari metode sistem dalam data 
+
+Topic 1: 
+citra tulisan tangan pengenalan batik fitur ekstraksi tekstur ciri wajah 
+
+Topic 2: 
+game mobile pembelajaran android teknologi gerakan virtual reality sapi algoritma 
+
+Topic 3: 
+arsitektur citra bangkalan enterprise batik togaf informasi dinas perdagangan instansi 
+
+Topic 4: 
+arsitektur tangan tulisan pengenalan enterprise togaf telapak sistem bangkalan informasi 
+
+Topic 5: 
+gizi status pasien balita makanan keputusan pendukung menu bayes naïve 
+
+Topic 6: 
+kriteria reality virtual karyawan augmented keputusan dunia teknologi second life 
+
+Topic 7: 
+reality virtual dokumen augmented penjadwalan dunia second life hujan kuliah 
+
+Topic 8: 
+batik commerce website tulis model decision toko madura penjadwalan pamekasan 
+
+Topic 9: 
+gizi batik reality status virtual peramalan commerce website tulis balita 
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">UAS PPW</p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The Jupyter Book Community<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
